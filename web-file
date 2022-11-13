@@ -1,0 +1,268 @@
+<html lang="ru-RU"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/wp-content/themes/mad-dog/favicon.ico">
+  <meta name="description" content="Основы работы с git репозиториями. Быстрый старт github. Какие действия нужно предпринять, чтобы залить свой проект на гитхаб?">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mad-dog.ru/podkluchenie-repozitoria-github/">
+  <meta property="og:title" content="Подключение репозитория GitHub на Windows">
+  <meta property="og:description" content="Основы работы с git репозиториями. Быстрый старт github. Какие действия нужно предпринять, чтобы залить свой проект на гитхаб?">
+  <meta property="og:image" content="https://mad-dog.ru/files/mad-dog-logo-new-01.jpg">
+
+  <!-- Yandex.RTB -->
+  <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PK65NPX"></script><script>window.yaContextCb=window.yaContextCb||[]</script>
+  <script src="https://yandex.ru/ads/system/context.js" async=""></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PK65NPX');</script>
+  <!-- End Google Tag Manager -->
+  <title>Подключение репозитория GitHub на Windows</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="amphtml" href="https://mad-dog.ru/podkluchenie-repozitoria-github/amp/"><meta name="generator" content="AMP for WP 1.0.77.38"><link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="wp-block-library-css" href="https://mad-dog.ru/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="prism-theme-css" href="https://mad-dog.ru/wp-content/plugins/ank-prism-for-wp/out/prism-css.min.css?ver=1587223265" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="https://mad-dog.ru/wp-content/themes/mad-dog/css/jquery.fancybox.min.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="pushy-css" href="https://mad-dog.ru/wp-content/themes/mad-dog//css/pushy.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="styles-css" href="https://mad-dog.ru/wp-content/themes/mad-dog/css/style.css?123&amp;ver=6.0.2" type="text/css" media="all">
+<script type="text/javascript" src="https://mad-dog.ru/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://mad-dog.ru/wp-json/"><link rel="alternate" type="application/json" href="https://mad-dog.ru/wp-json/wp/v2/posts/195"><link rel="canonical" href="https://mad-dog.ru/podkluchenie-repozitoria-github/">
+<link rel="alternate" type="application/json+oembed" href="https://mad-dog.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmad-dog.ru%2Fpodkluchenie-repozitoria-github%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://mad-dog.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmad-dog.ru%2Fpodkluchenie-repozitoria-github%2F&amp;format=xml">
+<script async="" type="text/javascript" src="https://mad-dog-ru.disqus.com/count.js"></script><script type="text/javascript" async="" src="https://mad-dog-ru.disqus.com/embed.js"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.f0b9fa230f553cb8fa9a3c0054ddc5d1.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.300fd7523e7f201aab427c2273b6ebdc.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.0f7533a137632d8042527dcf8367f528.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script async="" id="dsq_recs_scr" src="https://mad-dog-ru.disqus.com/recommendations.js"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/recommendations/styles/recommendations.10022a97346f1c6e3798931bbd8e4bb5.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/recommendations/common.bundle.9bc23671d54f97492fac0752f3590c1f.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/recommendations/recommendations.bundle.a7942bfa7a9020c903037fbdc08e6ca7.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script src="https://c.disquscdn.com/next/embed/alfie_v4.63f1ab6d6b9d5807dc0c94ef3fe0b851.js" async="" charset="UTF-8"></script></head>
+<body class="post-template-default single single-post postid-195 single-format-standard">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK65NPX"
+       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Pushy Menu -->
+  <nav class="pushy pushy-left">
+    <div class="pushy-content">
+      <nav class="navbar"><ul id="menu-mobile" class="nav" role="navigation"><li id="menu-item-676" class="menu-item nav-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-676"><a class="nav-link" href="https://mad-dog.ru/">Главная</a></li>
+<li id="menu-item-677" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-677"><a class="nav-link" href="https://mad-dog.ru/category/development/">Разработка</a></li>
+<li id="menu-item-679" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-679"><a class="nav-link" href="https://mad-dog.ru/category/design/">Дизайн</a></li>
+<li id="menu-item-681" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-681"><a class="nav-link" href="https://mad-dog.ru/category/marketing/">Маркетинг</a></li>
+<li id="menu-item-678" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-678"><a class="nav-link" href="https://mad-dog.ru/category/woocommerce/">Woocommerce</a></li>
+<li id="menu-item-680" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-680"><a class="nav-link" href="https://mad-dog.ru/category/wordpress/">WordPress</a></li>
+<li id="menu-item-675" class="menu-item nav-item menu-item-type-post_type menu-item-object-page menu-item-675"><a class="nav-link" href="https://mad-dog.ru/dokumentatsiya-acf-advanced-custom-fields/">Документация ACF (Advanced Custom Fields)</a></li>
+</ul></nav>    </div>
+  </nav>
+
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+
+  <!-- Your Content -->
+  <div id="container">
+
+    <header>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-3 col-md-2 d-lg-none">
+            <!-- Menu Button -->
+            <button class="menu-btn d-lg-none"><span class="menu-icon">☰</span> МЕНЮ</button>
+          </div>
+
+          <div class="col-9 col-md-10 col-lg-2 text-right text-sm-left">
+            <a href="/" title="Блог Web-разработчика"><img src="/files/mad-dog-logo-new.svg" alt="Блог разработчика"></a>
+          </div>
+          <div class="d-none d-lg-flex col-lg-10">
+            <nav class="navbar"><ul id="menu-top" class="nav" role="navigation"><li id="menu-item-237" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-237"><a class="nav-link" href="https://mad-dog.ru/tag/wordpress/">WordPress</a></li>
+<li id="menu-item-238" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-238"><a class="nav-link" href="https://mad-dog.ru/tag/woocommerce/">Woocommerce</a></li>
+<li id="menu-item-293" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-293"><a class="nav-link" href="https://mad-dog.ru/category/development/">Разработка</a></li>
+<li id="menu-item-368" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-368"><a class="nav-link" href="https://mad-dog.ru/category/design/">Дизайн</a></li>
+<li id="menu-item-383" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-383"><a class="nav-link" href="https://mad-dog.ru/category/marketing/">Маркетинг</a></li>
+<li id="menu-item-1115" class="menu-item nav-item menu-item-type-taxonomy menu-item-object-category menu-item-1115"><a class="nav-link" href="https://mad-dog.ru/category/blog/">Блог</a></li>
+</ul></nav>          </div>
+        </div>
+      </div>
+    </header>
+
+<div class="container">
+  <div class="row">
+
+    <div class="d-none d-lg-flex col-lg-3">
+      <aside>
+  <p class="title">Популярные материалы</p>
+  <nav class="navbar"><ul id="menu-aside" class="nav" role="navigation"><li id="menu-item-1110" class="menu-item nav-item menu-item-type-post_type menu-item-object-post menu-item-1110"><a class="nav-link" href="https://mad-dog.ru/update-gulp-v4/">Как обновить Gulp до версии 4?</a></li>
+<li id="menu-item-76" class="menu-item nav-item menu-item-type-post_type menu-item-object-post menu-item-76"><a class="nav-link" href="https://mad-dog.ru/how-to-build-python-bot-web-games/">Как написать игрового бота на Python для Web</a></li>
+<li id="menu-item-1111" class="menu-item nav-item menu-item-type-post_type menu-item-object-post menu-item-1111"><a class="nav-link" href="https://mad-dog.ru/woocommerce-breadcrumbs/">Хлебные крошки в Woocommerce</a></li>
+<li id="menu-item-1112" class="menu-item nav-item menu-item-type-post_type menu-item-object-post menu-item-1112"><a class="nav-link" href="https://mad-dog.ru/phpstorm-hotkeys/">Настройка и горячие клавиши (hotkeys) phpStorm</a></li>
+<li id="menu-item-314" class="menu-item nav-item menu-item-type-post_type menu-item-object-page menu-item-314"><a class="nav-link" href="https://mad-dog.ru/dokumentatsiya-acf-advanced-custom-fields/">Документация ACF (Advanced Custom Fields)</a></li>
+<li id="menu-item-203" class="menu-item nav-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-203"><a class="nav-link" href="https://mad-dog.ru/podkluchenie-repozitoria-github/" aria-current="page">Подключение репозитория GitHub на Windows</a></li>
+<li id="menu-item-868" class="menu-item nav-item menu-item-type-post_type menu-item-object-page menu-item-868"><a class="nav-link" href="https://mad-dog.ru/ustanovka-ssl-sertifikata/">Установка SSL сертификата</a></li>
+</ul></nav>  <div class="sidebar-sticky">
+    <noindex>
+    <!-- Yandex.RTB R-A-1592922-1 -->
+    <div id="yandex_rtb_R-A-1592922-1"></div>
+    <script>window.yaContextCb.push( () => {
+        Ya.Context.AdvManager.render( {
+          renderTo: 'yandex_rtb_R-A-1592922-1',
+          blockId: 'R-A-1592922-1'
+        } )
+      } )</script>
+
+      <!-- Yandex.RTB R-A-1592922-6 -->
+      <div id="yandex_rtb_R-A-1592922-6"></div>
+      <script>window.yaContextCb.push(()=>{
+          Ya.Context.AdvManager.render({
+            renderTo: 'yandex_rtb_R-A-1592922-6',
+            blockId: 'R-A-1592922-6'
+          })
+        })</script>
+    </noindex>
+  </div>
+  <!--  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+  <!--  <ins class="adsbygoogle"-->
+  <!--       style="display:block"-->
+  <!--       data-ad-client="ca-pub-5939780835692925"-->
+  <!--       data-ad-slot="5462205395"-->
+  <!--       data-ad-format="auto"-->
+  <!--       data-full-width-responsive="true"></ins>-->
+  <!--  <script>-->
+  <!--  (adsbygoogle = window.adsbygoogle || []).push({});-
+  <!--  </script>-->
+</aside>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="dp_breadcrumb_main" xmlns:v="http://rdf.data-vocabulary.org/#"><span class="dp_breadcrumb_span_home" typeof="v:Breadcrumb"><a class="dp_breadcrumb_a_home" rel="v:url" property="v:title" href="https://mad-dog.ru">Блог разработчика</a></span> <i class="bi bi-arrow-right-short"></i> <span class="dp_breadcrumb_span_1 dp_breadcrumb_span_last" typeof="v:Breadcrumb"><a class="dp_breadcrumb_a_1 dp_breadcrumb_a_last" rel="v:url" property="v:title" href="https://mad-dog.ru/category/development/" title="Разработка">Разработка</a></span> <i class="bi bi-arrow-right-short"></i> <span class="dp_breadcrumb_span_2 dp_breadcrumb_span_last" typeof="v:Breadcrumb"><a class="dp_breadcrumb_a_2 dp_breadcrumb_a_last" rel="v:url" property="v:title" href="https://mad-dog.ru/podkluchenie-repozitoria-github/" title="Подключение репозитория GitHub на Windows">Подключение репозитория GitHub на Windows</a></span></div>                <h1>Подключение репозитория GitHub на Windows</h1>
+
+          <div class="mb-5">
+            <noindex>
+              <!-- Yandex.RTB R-A-1592922-3 -->
+              <div id="yandex_rtb_R-A-1592922-3"></div>
+              <script>window.yaContextCb.push( () => {
+                  Ya.Context.AdvManager.render( {
+                    renderTo: 'yandex_rtb_R-A-1592922-3', blockId: 'R-A-1592922-3'
+                  } )
+                } )</script>
+            </noindex>
+          </div>
+
+          <h1>Как начать работать с GitHub</h1>
+<p>Чтобы развернуть репозиторий GitHub, нужно проделать следующие шаги</p>
+<ol>
+  <li><p>Создаем на сайте <a href="https://github.com/" rel="nofollow noopener noreferrer" target="_blank">GitHub</a> репозиторий. В нашем случае git@github.com:obemgcabazn/*имя репозитория*.git</p></li>
+  <li><p>Открываем в папке проекта командную строку и выполняем команду <code>git init</code>. Она создаст папку .git</p></li>
+  <li><p><code>git remote add origin <a class="vglnk" href="https://github.com/obemgcabazn/*имя" rel="nofollow"><span>https</span><span>://</span><span>github</span><span>.</span><span>com</span><span>/</span><span>obemgcabazn</span><span>/*имя</span></a> репозитория*.git</code> Привязываем папку к нашему репозиторию на GitHub (origin - это синоним "удаленного репозитория").</p></li>
+  <li><p><code>git add .</code> — эта команда добавит в индекс все файлы из папки</p></li>
+  <li><p><code>git add -u</code> — (u - updated) добавить в stage файлы измененные с последнего коммита файлы</p></li>
+  <li><p><code>git status</code> покажет, что на данный момент находится в индексе</p></li>
+  <li>
+    <p><code>git rm -r --cached /frontend/psd/.</code> - Если нам не нужно передавать какие-то файлы в коммит, то можем удалить их из индекса командой <code>rm</code>. Здесь нужно быть внимательным, так как без флагов эта команда удалит и файлы с жесткого диска. 
+      </p><ul>
+        <li>Чтобы оставить файлы на диске и удалить их из индекса, есть флаг <code>--cached</code></li>
+        <li>Если нужно удалить все файлы из индекса, лежащие в какой-то определенной папке, то нужно поставить флаг <code>-r</code>. Чтобы пройти рекурсивно по всем файлам.</li>
+      </ul>
+    <p></p>
+  </li>
+  <li><p>Если файлы готовы, то можно сделать коммит <code>git commit -m 'сообщение коммита'</code> - где флаг -m нужен для передачи сообщения коммита без открытия редактора.</p></li>
+  <li><p>Отправить в коммит только modified файлы — <code>git commit -am 'сообщение коммита'</code>.</p></li>
+  <li><p>После этого нужно сделать пуш на сервер — <code>git push -u origin master</code></p></li>
+</ol>
+
+<h2>Добавить SSH ключи</h2>
+
+<p>Если не работает по причине нехватки прав, то, возможно проблема с SSH ключами. Нужно запустить Gti Bash и набрать следующую команду: <code>ssh-keygen -t rsa -C "myemail@mail.ru"</code>. Конечно, указать свой почтовый ящик. На все вопросы нажимаем Enter. После выполнения, в каталоге <code>C:\Documents and Settings\username\.ssh</code> появятся файлы id_rsa и id_rsa.pub.</p>
+<p>Далее на <a class="vglnk" href="http://GitHub.com" rel="nofollow"><span>GitHub</span><span>.</span><span>com</span></a> заходим в аккаунт в Settings -&gt; SSH and GPG keys -&gt; "New SSH key". В Заголовок вставляем что угодно, что поможет потом понять на какой компьютер установлен ключ (например, имя или место компьютера), а в поле key вставляем содержимое <code>id_rsa.pub</code>.</p>
+<p>После этого гитхаб должен перестать ругаться на отсутствие прав доступа.</p>
+
+<h2>Часто используемые команды</h2>
+
+<div class="row">
+  <div class="col-md-12">
+    <img src="/files/article/git/basic-usage.svg" alt="команды Git">
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-md-12">
+    <ul>
+      <li>git add <i>файлы</i> - добавляет файлы в индекс</li>
+      <li>git commit - отправляет из индекса в хранилище для дальнейшей отправки (git push) в удаленный репозиторий</li>
+      <li>git reset -- <i>файлы</i> заменяет файлы в индексе файлами из последнего коммита</li>
+      <li>git checkout <i>файлы</i> - заменяет файлы проекта ни диске файлами из индекса</li> 
+      <li><b>git push origin master</b> - отправляет файл на сервер, чтобы не вводить каждый раз логин/пароль, воспользуйтесь флагом '-u'</li>
+    </ul>
+  </div>
+</div>
+
+<p>Чтобы создать новую ветку, нужно использовать команду <code>git branch [Название_ветки]</code>. Если написать просто <code>git branch</code> - покажет список существующих веток.</p>
+<p><code>git checkout [Название ветки]</code> - выбор ветки</p>
+<p>Чтобы создать ветку и сразу ее выбрать <code>git checkout -b [Новая ветка]</code></p>
+
+
+<p>Читайте также:</p>
+<ul>
+  <li><a href="/gitignore/" title="Настройка gitignore">файл gitignore</a></li>
+  <li><a href="/oshibki-git/" title="Ошибки слияния git">Ошибки слияния git</a></li>
+</ul>
+<div id="disqus_recommendations" style="margin-bottom: 12px;"><iframe id="dsq-app4567" name="dsq-app4567" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/recommendations/?base=default&amp;f=mad-dog-ru&amp;t_i=195%20http%3A%2F%2Fmad-dog.ru%2F%3Fp%3D195&amp;t_u=https%3A%2F%2Fmad-dog.ru%2Fpodkluchenie-repozitoria-github%2F&amp;t_e=%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20GitHub%20%D0%BD%D0%B0%20Windows&amp;t_d=%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20GitHub%20%D0%BD%D0%B0%20Windows&amp;t_t=%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20GitHub%20%D0%BD%D0%B0%20Windows#version=98c2b43a4e5c7cb71d563d4e1045781b" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 268px !important; display: inline !important; box-sizing: border-box !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div><div id="disqus_thread"><iframe id="dsq-app2398" name="dsq-app2398" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=mad-dog-ru&amp;t_i=195%20http%3A%2F%2Fmad-dog.ru%2F%3Fp%3D195&amp;t_u=https%3A%2F%2Fmad-dog.ru%2Fpodkluchenie-repozitoria-github%2F&amp;t_e=%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20GitHub%20%D0%BD%D0%B0%20Windows&amp;t_d=%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20GitHub%20%D0%BD%D0%B0%20Windows&amp;t_t=%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20GitHub%20%D0%BD%D0%B0%20Windows&amp;s_o=default#version=ff134f46f44288d98add30ec8017d2ea" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 597px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+      <noindex>
+        <!-- Yandex.RTB R-A-1592922-2 -->
+        <div id="yandex_rtb_R-A-1592922-2"></div>
+        <script>window.yaContextCb.push( () => {
+            Ya.Context.AdvManager.render( {
+              renderTo: 'yandex_rtb_R-A-1592922-2', blockId: 'R-A-1592922-2'
+            } )
+          } )</script>
+      </noindex>
+    </div><!-- колонка с контентом -->
+  </div><!-- row -->
+</div> <!-- container -->
+
+      <footer class="my-5">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-12 col-md-6 text-center">
+        <a href="/politika-konfidenczialnosti/" target="_blank">Политика конфиденциальности</a></div>
+      <div class="col-12 col-md-6 text-center">
+        <a href="/polzovatelskoe-soglashenie/" target="_blank">Пользовательское соглашение</a></div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-10 col-xl-11">
+        © 2016 — 2022. При копировании материалов обязательна активная индексируемая ссылка на источник.
+      </div>
+      <div class="col-2 col-xl-1">
+        <!-- AdminVPS_Button Begin-->
+        <a href="https://my.adminvps.ru/aff.php?aff=1547" rel="nofollow"><img src="https://adminvps.ru/static/images/img/88x31.gif" alt="Хостинг AdminVPS" border="0"></a><!-- AdminVPS_Button End-->
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div><!-- pushy -->
+
+<script type="text/javascript" id="disqus_count-js-extra">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"mad-dog-ru"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22" id="disqus_count-js"></script>
+<script type="text/javascript" id="disqus_embed-js-extra">
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.22"},"disqusIdentifier":"195 http:\/\/mad-dog.ru\/?p=195","disqusShortname":"mad-dog-ru","disqusTitle":"\u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u044f GitHub \u043d\u0430 Windows","disqusUrl":"https:\/\/mad-dog.ru\/podkluchenie-repozitoria-github\/","postId":"195"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.0.22" id="disqus_embed-js"></script>
+<script type="text/javascript" id="tptn_tracker-js-extra">
+/* <![CDATA[ */
+var ajax_tptn_tracker = {"ajax_url":"https:\/\/mad-dog.ru\/","top_ten_id":"195","top_ten_blog_id":"1","activate_counter":"11","top_ten_debug":"0","tptn_rnd":"681021671"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/plugins/top-10/includes/js/top-10-tracker.min.js?ver=3.2.1" id="tptn_tracker-js"></script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/themes/mad-dog/js/assets/jquery.fancybox.min.js?ver=6.0.2" id="fancybox-js"></script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/themes/mad-dog//js/pushy.min.js?ver=6.0.2" id="pushy-js"></script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/themes/mad-dog/js/script.js?ver=6.0.2" id="script-js"></script>
+<script type="text/javascript" src="https://mad-dog.ru/wp-content/plugins/ank-prism-for-wp/out/prism-js.min.js?ver=1587223265" id="prism-script-js"></script>
+
+
+<script type="text/javascript" id="">(function(d,b,a){(b[a]=b[a]||[]).push(function(){try{b.yaCounter27419612=new Ya.Metrika({id:27419612,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0,trackHash:!0})}catch(f){}});var e=d.getElementsByTagName("script")[0],c=d.createElement("script");a=function(){e.parentNode.insertBefore(c,e)};c.type="text/javascript";c.async=!0;c.src="https://mc.yandex.ru/metrika/watch.js";"[object Opera]"==b.opera?d.addEventListener("DOMContentLoaded",a,!1):a()})(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/27419612" style="position:absolute; left:-9999px;" alt=""></div></noscript><iframe style="display: none;"></iframe><iframe style="display: none;"></iframe></body></html>
